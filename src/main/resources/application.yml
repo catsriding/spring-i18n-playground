@@ -1,0 +1,35 @@
+spring:
+  messages:
+    basename:
+      - messages
+      - errors
+    encoding: UTF-8
+    cache-duration: -1
+    always-use-message-format: true
+    fallback-to-system-locale: false
+    use-code-as-default-message: true
+  web:
+    locale: ko
+    locale-resolver: accept_header
+
+  datasource:
+    url: jdbc:h2:mem:shared;MODE=MySQL;DATABASE_TO_UPPER=false;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=TRUE
+    username: sa
+    password:
+
+  sql:
+    init:
+      mode: always
+      schema-locations: classpath:schema.sql
+      data-locations: classpath:data.sql
+
+  jpa:
+    open-in-view: false
+    generate-ddl: false
+    properties:
+      hibernate:
+        default_batch_fetch_size: 1000
+        format_sql: true
+        show_sql: true
+    hibernate:
+      ddl-auto: none

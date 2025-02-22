@@ -1,0 +1,28 @@
+### default greeting
+GET http://localhost:8080/greetings
+Accept-Charset: UTF-8
+
+### greeting in korean
+GET http://localhost:8080/greetings
+Accept-Language: ko
+Accept-Charset: UTF-8
+
+### greeting in english
+GET http://localhost:8080/greetings
+Accept-Language: en
+Accept-Charset: UTF-8
+
+### greeting in japanese
+GET http://localhost:8080/greetings
+Accept-Language: ja
+Accept-Charset: UTF-8
+
+### greeting in chinese
+GET http://localhost:8080/greetings
+Accept-Language: zh
+Accept-Charset: UTF-8
+
+### greeting in spanish
+GET http://localhost:8080/greetings
+Accept-Language: es
+Accept-Charset: UTF-8
